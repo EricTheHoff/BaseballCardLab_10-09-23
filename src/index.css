@@ -3,6 +3,7 @@
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-gap: 20px;
   align-items: center;
+  background-image: linear-gradient(to bottom right, orange, blue)
 }
 
 div.card {
@@ -15,9 +16,18 @@ div.card {
   cursor: pointer;
   min-width: 200px;
   min-height: 320px;
+  background-color: rgb(197, 131, 100)
 }
 
 body {
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
 
+div.card {
+  transition: all .2s ease-in-out;
+  box-shadow: 5px 5px 10px 2px black
+}
+
+div.card:hover {
+  transform: scale(1.1)
+}

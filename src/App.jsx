@@ -11,8 +11,10 @@ function BaseballCard(props) {
   if(showPicture) {
     return (
       <div className="card" onClick={toggleCard}>
-        <h2>{props.name}</h2>
-        <img src={props.imgUrl} alt="Baseball Player"/>
+        <div className="front">
+          <h2>{props.name}</h2>
+          <img src={props.imgUrl} alt="Baseball Player"/>
+        </div>
       </div>
     )
   } else {
@@ -21,10 +23,12 @@ function BaseballCard(props) {
     ))
     return (
       <div className="card" onClick={toggleCard}>
-        <h2>{props.name}</h2>
-        <p>{props.team}</p>
-        <p>{props.position}</p>
-        {statsDisplay}
+        <div className="back">
+          <h2>{props.name}</h2>
+          <p>{props.team}</p>
+          <p>{props.position}</p>
+          {statsDisplay}
+        </div>
       </div>
     )
   }

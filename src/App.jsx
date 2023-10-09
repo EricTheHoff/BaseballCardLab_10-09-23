@@ -25,8 +25,8 @@ function BaseballCard(props) {
       <div className="card" onClick={toggleCard}>
         <div className="back">
           <h2>{props.name}</h2>
-          <p>{props.team}</p>
-          <p>{props.position}</p>
+          <p>Team: {props.team}</p>
+          <p>Position: {props.position}</p>
           {statsDisplay}
         </div>
       </div>
